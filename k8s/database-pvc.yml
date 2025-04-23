@@ -1,0 +1,28 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: database-pvc
+  namespace: chat-app
+  labels:
+    app: chat-app
+    env: production
+    version: v1
+    owner: riya
+    purpose: demo
+    created-by: riya
+    volume-type: database
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+  selector:
+    matchLabels:
+      app: chat-app
+      env: production
+      version: v1
+      owner: riya
+      purpose: demo
+      created-by: riya
+      volume-type: database

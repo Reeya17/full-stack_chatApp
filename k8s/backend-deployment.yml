@@ -1,0 +1,42 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: backend-deployment
+  namespace: chat-app
+  labels:
+    app: backend
+    env: production
+    version: v1
+    owner: riya
+    purpose: demo
+    created-by: riya
+    
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      name: backend-pod
+      namespace: chat-app
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend-container
+          image: neo4j20212021/backend-chatapp:latest
+          ports:
+            - containerPort: 5001
+          env:
+            - name: NODE_ENV
+              value: "production"
+            - name: PORT
+              value: "5001"
+            - name: MONGODB_URI
+              value: "mongodb://mongo-admin:secret-password@mongodb:27017/chat-app?authSource=admin"
+            - name: JWT_SECRET
+              valueFrom: 
+                secretKeyRef:
+                  name: mongodb-secret
+                  key: jwt-secret

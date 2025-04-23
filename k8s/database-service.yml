@@ -1,0 +1,19 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: mongodb
+  namespace: chat-app
+  labels:
+    app: mongodb
+    env: production
+    version: v1
+    owner: riya
+    purpose: demo
+    created-by: riya
+spec:
+  selector:
+    app: mongodb
+  ports:
+    - protocol: TCP
+      port: 27017
+      targetPort: 27017

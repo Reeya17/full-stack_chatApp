@@ -1,0 +1,20 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: backend
+  namespace: chat-app
+  labels:
+    app: backend
+    env: production
+    version: v1
+    owner: riya
+    purpose: demo
+    created-by: riya
+spec:
+  selector:
+    app: backend
+  ports:
+    - protocol: TCP
+      port: 5001
+      targetPort: 5001
+

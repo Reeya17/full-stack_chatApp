@@ -1,0 +1,12 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: chat-app
+  labels:
+    name: chat-app
+    app: chat-app
+    env: production
+    version: v1
+    owner: riya
+    purpose: demo
+    created-by: riya
