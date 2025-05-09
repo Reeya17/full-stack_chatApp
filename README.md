@@ -215,6 +215,16 @@ This project is evolving, and here are a few exciting things on the horizon:
 
 ![Login](/frontend/public/login.png)
 
+![conversation](/frontend/public/conversation.png)
+
+![create_account](/frontend/public/create_account.png)
+
+![kubernetes](/frontend/public/kubernetes.png)
+
+![ports](/frontend/public/ports.png) 
+
+![access](/frontend/public/acess.png)
+
 
 
 ## 📜 License
