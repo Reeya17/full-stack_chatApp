@@ -209,11 +209,7 @@ This project is evolving, and here are a few exciting things on the horizon:
 
 ![Settings](frontend/public/settings.png)
 
-![chat](frontend/public/chat.png)
-
 ![logout](/frontend/public/logout.png)
-
-![Login](/frontend/public/login.png)
 
 ![conversation](/frontend/public/conversation.png)
 
