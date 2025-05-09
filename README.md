@@ -219,7 +219,7 @@ This project is evolving, and here are a few exciting things on the horizon:
 
 ![ports](/frontend/public/ports.png) 
 
-![access](/frontend/public/acess.png)
+
 
 
 
